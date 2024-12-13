@@ -1,4 +1,5 @@
-function NavBar({ img, carrito }) {
+function NavBar( props ) {
+  const { img,carrito } = props;
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
