@@ -1,0 +1,76 @@
+/* src/components/CardProductos.css */
+
+/* Estilo general del contenedor de la card */
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+/* Efecto hover para la card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del producto */
+.card img {
+  width: 100%;
+  height: 200px; /* Altura fija para imágenes uniformes */
+  object-fit: cover; /* Recorte proporcional */
+}
+
+/* Cuerpo de la card */
+.card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Título del producto */
+.card-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Descripción del producto */
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Precio del producto */
+.card-price {
+  font-size: 1.1rem;
+  color: #e06032;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Enlace al detalle del producto */
+.card a {
+  text-decoration: none;
+}
+
+/* Botón de acción */
+.card button {
+  background-color: #e06032;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.card button:hover {
+  background-color: #cc4d1f;
+}

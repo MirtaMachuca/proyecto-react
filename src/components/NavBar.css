@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fd7847; 
+}
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+.navbar-brand img {
+  max-height: 50px; 
+}
+
+/* Lista de navegación */
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover {
+  color: #928888; 
+}
+
+a.active {
+  color: #ff5722; 
+}
+
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Contador del carrito */
+.cart-count {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background-color: #e06032;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}

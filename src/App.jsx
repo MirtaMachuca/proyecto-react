@@ -1,20 +1,28 @@
-
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import "./App.css";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
-import ItemListContainer from './components/ItemListContainer';
-import Carrito from "./components/Carrito";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-    <NavBar
-      img="/imagenes/logo.bmp"
-      carrito={<Carrito/>}
-    />
-    <ItemListContainer greeting="¡Hola, bienvenido a nuestra tienda online Dakota!"/>
-
-    </>
+    <BrowserRouter>
+      <NavBar img="/imagenes/logo.bmp" />
+      <Routes>
+        <Route
+          path="/"
+          element={<ItemListContainer greeting="Zapatillas Deportivas" />}
+        />
+        <Route
+          path="/category/:catid"
+          element={<ItemListContainer greeting="Compras por categoría" />}
+        />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+      </Routes>
+      <footer>
+        <small>Tienda Online</small>
+      </footer>
+    </BrowserRouter>
   );
 }
 
