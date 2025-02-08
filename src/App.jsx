@@ -4,10 +4,13 @@ import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 function App() {
   return (
+    
     <BrowserRouter>
       <NavBar img="/imagenes/logo.bmp" />
+    
       <Routes>
         <Route
           path="/"

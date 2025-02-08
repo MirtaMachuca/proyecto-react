@@ -2,8 +2,8 @@ const products = [
     {
       id: 1,
       title: 'Zapatillas Running adidas Response',
-      precio: 150,
       price: 20,
+      stock:10,
       //talle:'35,36,37,38,40',
       img: `https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw7c785fe8/products/NIDD9293-401/NIDD9293-401-2.JPG?sw=300&sh=300`,
       category: 'Adidas'

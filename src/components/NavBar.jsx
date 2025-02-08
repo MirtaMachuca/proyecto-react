@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
 import "./NavBar.css";
 
+
 export default function NavBar({ img }) {
   return (
     <nav className="navbar navbar-expand-lg ">
@@ -39,16 +40,16 @@ export default function NavBar({ img }) {
               <NavLink className="nav-link" to="/item">Detalle</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/category/Adidas">Adidas</NavLink>
+              <NavLink className="nav-link" to="/category/adidas">Adidas</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/category/Under">Under</NavLink>
+              <NavLink className="nav-link" to="/category/under">Under</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/category/Nike">Nike</NavLink>
+              <NavLink className="nav-link" to="/category/nike">Nike</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/category/Topper">Topper</NavLink>
+              <NavLink className="nav-link" to="/category/topper">Topper</NavLink>
             </li>
           </ul>
 
