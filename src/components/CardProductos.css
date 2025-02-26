@@ -1,5 +1,73 @@
-/* src/components/CardProductos.css */
+.cart-widget {
+  position: relative; /* Para posicionar la cantidad encima del icono */
+  display: flex;
+  align-items: center;
+  color: white; /* Color del icono y la cantidad */
+  font-size: 1.2rem;
+}
 
+.cart-widget i {
+  font-size: 1.5rem; /* Tamaño del icono */
+  margin-right: 5px;
+}
+
+.cart-count {
+  position: absolute; /* Posiciona la cantidad encima del icono */
+  top: -10px; /* Ajusta la posición vertical */
+  right: -10px; /* Ajusta la posición horizontal */
+  background-color: red; /* Color de fondo de la cantidad */
+  color: white; /* Color del texto de la cantidad */
+  padding: 2px 5px; /* Ajusta el padding de la cantidad */
+  border-radius: 50%; /* Forma circular para la cantidad */
+  font-size: 0.8rem; /* Tamaño de la cantidad */
+}
+
+
+.cart-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-details {
+  flex-grow: 1;
+}
+
+.cart-title {
+  font-weight: bold;
+}
+
+.cart-remove {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* Estilo general del contenedor de la card */
 .card {
   width: 300px;

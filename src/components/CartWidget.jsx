@@ -1,21 +1,18 @@
-/*function Carrito() { 
-  return (
-    <a href="#!" className="btn btn-outline-dark ms-3">
-      <i className="fas fa-shopping-cart"></i>
-      <span> 5 </span>
-    </a>
-  );
-}
-  
-  export default Carrito;*/
+import cartContext from "../context/cartContext";
+import { useContext } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-  export default function CartWidget() {
+
+function CartWidget() {
+    const context = useContext(cartContext);
+
     return (
-      <div className="cart-icon">
-        🛒
-        <span className="cart-count">1</span>
-      </div>
+        <div className="cart-widget">
+            <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
+            {context.countItemsInCart() > 0 && <p> {context.countItemsInCart()} </p>}
+        </div>
     );
-  }
+}
 
-  
+export default CartWidget;

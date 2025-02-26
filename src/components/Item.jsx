@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
 import "./CardProductos.css";
 
 function Item(props) {
@@ -14,13 +13,10 @@ function Item(props) {
         <div>
           <p className="card-price">$ {price}</p>
         </div>
-        <Link to={`/item/${id}`}>
-          <Button>Ver Detalle</Button>
-        </Link>
+        <Link to={"/item/" + id}><button>Ver Detalle</button></Link>
       </div>
     </div>
   );
 }
 
 export default Item;
-//rfce

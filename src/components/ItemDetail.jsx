@@ -1,26 +1,35 @@
-import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import cartContext from "../context/cartContext";
 
 function ItemDetail(props) {
-  const { price, title, description, text, img, stock } = props;
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
+  const navigate = useNavigate(); 
+
+  const { price, title, img, stock, id } = props;
+  const { addItem } = useContext(cartContext);
 
   function onSubmitCount(count) {
-    console.log(`Agregaste ${count} unidades al carrito`);
+    addItem({ id, price, count, img });
+    setIsAddedToCart(true);
   }
 
   return (
-    <div className="">
+    <div>
       <img src={img} width="150" height="150" alt="product img" />
-      <div className="">
-        <h3 className="">{title}</h3>
-        <p className="">{text}</p>
+      <div>
+        <h3>{title}</h3>
         <div>
-          <p className="">$ {price}</p>
+          <p>$ {price}</p>
         </div>
-        <p>{description}</p>
       </div>
       <div>
-        <ItemCount onSubmitCount={onSubmitCount} max={stock} />
+        {isAddedToCart ? (
+          <button onClick={() => navigate("/cart")}>Ver Carrito</button> 
+        ) : (
+          <ItemCount onSubmitCount={onSubmitCount} max={stock} />
+        )}
       </div>
     </div>
   );

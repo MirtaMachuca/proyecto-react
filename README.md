@@ -13,17 +13,17 @@ Currently, two official plugins are available:
 
 ## Descripción del Proyecto
 
-ZapaTienda Online es una tienda en línea de zapatillas creada con el objetivo de ofrecer una experiencia de compra fácil y personalizada. Los usuarios pueden explorar una amplia variedad de zapatillas, encontrar sus modelos favoritos por categoría, ver detalles de cada producto y realizar compras de forma segura.
+Dhaka tienda Online es una tienda en línea de zapatillas creada con el objetivo de ofrecer una experiencia de compra fácil y personalizada. Los usuarios pueden explorar una amplia variedad de zapatillas, encontrar sus modelos favoritos por categoría, ver detalles de cada producto y realizar compras de forma segura.
 
 ## Motivación
 
-Este proyecto nació como una iniciativa personal para aprender y aplicar mis conocimientos en desarrollo web. Inspirado en mi local de zapatillas, decidí crear una plataforma en línea que permitiera a los clientes explorar el catálogo de productos y realizar compras desde la comodidad de sus hogares.
+Este proyecto nació como una iniciativa personal para aprender y aplicar mis conocimientos en desarrollo web. Inspirado en mi local de zapatillas, decidí crear una web que permitiera a los clientes explorar el catálogo de productos y realizar compras desde la comodidad de sus hogares.
 
 ## Tecnologías Utilizadas
 
 *   **Frontend:** HTML, CSS, JavaScript
 *   **Backend:** [Tecnología de backend utilizada, si aplica]
-*   **Base de datos:** [Base de datos utilizada, si aplica]
+*   **Base de datos:** [firebase]
 *   **Frameworks/Librerías:** [Bootstrap]
 
 ## Funcionalidades

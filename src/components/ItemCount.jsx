@@ -1,31 +1,29 @@
 import { useState } from "react";
 
-function ItemCount(props) {
+function ItemCount({ max, onSubmitCount }) {
   let [count, setCount] = useState(1);
 
   const handleAdd = () => {
-    setCount(count < props.stock ? count + 1 : count);
+    if (count < max) {
+      setCount(count + 1);
+    }
   };
 
-  const handleSubstract = () => {
+  const handleSubtract = () => {
     if (count > 1) {
       setCount(count - 1);
-    } 
+    }
   };
-
-  function handleClick() {
-    props.onSubmitCount(count);
-  }
 
   return (
     <div>
       <div>
-        <button onClick={handleAdd}>+</button>
+        <button onClick={handleSubtract} disabled={count === 1}>-</button>
         <span>{count}</span>
-        <button onClick={handleSubstract}>-</button>
+        <button onClick={handleAdd} disabled={count === max}>+</button>
       </div>
       <div>
-        <button onClick={handleClick}>Agregar al carrito</button>
+        <button onClick={() => onSubmitCount(count)}>Agregar al carrito</button>
       </div>
     </div>
   );

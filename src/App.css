@@ -16,7 +16,10 @@
 .navbar {
   background-color: rgb(255, 50, 80) !important; 
 }
-
+/*footer*/
+footer {
+  background-color: rgb(255, 50, 80) !important;
+}
 /* greeting.css*/
 
 .greeting {

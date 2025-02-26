@@ -1,0 +1,44 @@
+.item-detail-container { /* Contenedor principal del detalle del producto */
+    display: flex; /* Para alinear imagen y descripción horizontalmente */
+    gap: 20px; /* Espacio entre imagen y descripción */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde opcional */
+    border-radius: 8px; /* Bordes redondeados */
+    width: fit-content; /* Ajustar el ancho al contenido */
+    margin: 20px auto; /* Centrar el contenedor en la página */
+}
+
+.item-detail-image { /* Estilos para la imagen */
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Para que la imagen cubra todo el espacio */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.item-detail-info { /* Contenedor para la información del producto */
+    display: flex;
+    flex-direction: column; /* Para apilar los elementos verticalmente */
+    gap: 10px;
+}
+
+.item-detail-title { /* Estilos para el título */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-detail-price { /* Estilos para el precio */
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.item-count-container { /* Estilos para el componente ItemCount */
+    /* Los estilos que has definido previamente para ItemCount */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+}
+
+.item-count-add-to-cart button {
+    width: 100%; /* El botón "Agregar al carrito" ocupa todo el ancho */
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+}
